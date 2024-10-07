@@ -1,3 +1,4 @@
+import { Providers } from '../components/providers'
 import './globals.css'
 
 export const metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body className="font-mono overflow-hidden max-h-screen min-h-screen ">
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	)
 }
